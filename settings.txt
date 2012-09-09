@@ -1,0 +1,14 @@
+username,
+password,
+teacher,
+friend,
+restaurant,
+pet,
+school,
+wait,300
+untzon,1
+untzpass,
+server,
+sktoggle,0
+invrows,1
+invsleep,10800000
