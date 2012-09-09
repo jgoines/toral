@@ -123,7 +123,8 @@ do {
 				$result=$TORBSproc +" is not running."
 				$status="SWTOR client status at " +$date +": "+$result
 				write-host $status
-				Stop-Process -name swtor
+				if (Get-Process swtor -ErrorAction SilentlyContinue) { Stop-Process -name swtor }
+				if (Get-Process clickinv -ErrorAction SilentlyContinue) { Stop-Process -name clickinv}
 			}
 		}
 	}
